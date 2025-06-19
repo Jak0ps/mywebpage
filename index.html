@@ -2,33 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test Page</title>
+  <title>Modern Test Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    :root {
+      --primary-color: #4f46e5;
+      --text-color: #333;
+      --bg-color: #f3f4f6;
+      --card-bg: white;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
     }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
     h1 {
-      color: #333;
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
+
     p {
-      color: #666;
+      font-size: 1.1rem;
+      color: #555;
     }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+
     button {
-      padding: 10px 20px;
-      background-color: #007bff;
+      background-color: var(--primary-color);
       color: white;
       border: none;
-      border-radius: 4px;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3730a3;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <h1>Hello, World!</h1>
-  <p>This is a simple HTML page for testing purposes.</p>
-  <button onclick="alert('Button clicked!')">Click Me</button>
+  <header>
+    <h1>🚀 Modern Test Page</h1>
+    <p>Lightweight, responsive, and ready to test!</p>
+  </header>
+
+  <div class="card">
+    <h2>Welcome!</h2>
+    <p>This is a clean test page with a modern look. You can use it to test styling, layout, or deploy workflows.</p>
+    <button onclick="alert('Button clicked!')">Test Button</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Test Inc.
+  </footer>
 
 </body>
 </html>
